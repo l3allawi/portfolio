@@ -36,6 +36,40 @@ const Projects = () => {
   }, []);
 
   const projects: Project[] = [
+    
+    {
+      title: 'Sleep Tracking App',
+      description: 'Monitor and improve your sleep quality with detailed insights',
+      detailedDescription: 'A comprehensive sleep tracking application built with React Native and Firebase. Track your sleep duration, analyze sleep stages including light, deep, and REM cycles, view detailed graphs and statistics over time, and set personalized sleep goals to improve your rest quality.',
+      image: './images/sleep_app.png',
+      tags: ['Kotlin', 'XML', 'Firebase'],
+      github: 'https://github.com/AX-RF/sleep-tracking-app',
+      color: 'purple',
+      createdDate: 'April 2025',
+      features: ['Track sleep time', 'Sleep stages (light/deep/REM)', 'Graphs and statistics', 'Sleep goals']
+    },
+    {
+      title: 'Chat & Messaging App',
+      description: 'Real-time messaging platform with modern chat features',
+      detailedDescription: 'A full-featured real-time messaging application powered by Firebase. Supports instant messaging with typing indicators, secure login and signup authentication, emoji reactions, media sharing capabilities, and a sleek modern interface designed for seamless communication.',
+      image: './images/messaging_app.png',
+      tags: ['Flutter', 'Firebase', 'Android'],
+      github: 'https://github.com/AX-RF/messaging-app',
+      color: 'orange',
+      createdDate: 'March 2025',
+      features: ['Real-time messaging', 'Login/Signup authentication', 'Emojis & media sharing', 'Typing indicators']
+    },
+    {
+      title: 'App Locker & Screen Limit',
+      description: 'Take control of your screen time with smart app usage limits',
+      detailedDescription: 'A powerful digital wellbeing application built with Kotlin and Firebase for Android. Set daily usage limits for individual apps, automatically block apps once the time threshold is reached, view detailed usage analytics and trends, and receive smart notifications to help manage screen time effectively.',
+      image: './images/locker_app.png',
+      tags: ['Android', 'Kotlin', 'Firebase'],
+      github: 'https://github.com/AX-RF/app-locker',
+      color: 'yellow',
+      createdDate: 'February 2025',
+      features: ['Set daily app usage limits', 'Block apps after time reached', 'Usage analytics', 'Notifications']
+    },
     {
       title: "Let's Go Travel",
       description: 'A comprehensive travel booking platform for exploring destinations',
@@ -101,7 +135,7 @@ const Projects = () => {
       color: 'cyan',
       createdDate: 'October 2023',
       features: ['AI opponent', 'Multiple difficulty levels', 'Score tracking', 'Clean UI']
-    },
+    }
   ];
 
   const getColorClasses = (color: string) => {
@@ -135,6 +169,18 @@ const Projects = () => {
         text: 'text-purple-400',
         bg: 'bg-purple-400/10',
         badge: 'bg-purple-400/20 border-purple-400/30'
+      },
+      orange: {
+        border: 'border-orange-400',
+        text: 'text-orange-400',
+        bg: 'bg-orange-400/10',
+        badge: 'bg-orange-400/20 border-orange-400/30'
+      },
+      yellow: {
+        border: 'border-yellow-400',
+        text: 'text-yellow-400',
+        bg: 'bg-yellow-400/10',
+        badge: 'bg-yellow-400/20 border-yellow-400/30'
       }
     };
     return colors[color] || colors.cyan;
