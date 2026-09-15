@@ -184,7 +184,7 @@ const Contact = () => {
                 </h4>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/AX-RF"
+                    href="https://github.com/l3allawi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full border-2 border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-gray-900 transition-all duration-300"
